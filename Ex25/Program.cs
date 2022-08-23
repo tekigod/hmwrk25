@@ -7,13 +7,13 @@
 
 static int pow(int num1, int num2)
 {
-if (num2 == 1)
-return num1;
-else
-if (num2 % 2 == 0)
-return pow(num1, num2 / 2) * pow(num1, num2 / 2);
-else
-return pow(num1, (num2-1) / 2) * pow(num1, (num2-1) / 2)*num1;
+    if (num2 == 1)
+    return num1;
+    else
+    if (num2 % 2 == 0)
+    return pow(num1, num2 / 2) * pow(num1, num2 / 2);
+    else
+    return pow(num1, (num2-1) / 2) * pow(num1, (num2-1) / 2)*num1;
 }
 Console.Write("Введите первое число: ");
 int num1 = int.Parse(Console.ReadLine());
