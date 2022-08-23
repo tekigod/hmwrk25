@@ -6,20 +6,22 @@
 // 82 -> 10
 // 9012 -> 12
 
-using System;  
-  public class Zadanie27  
-   {  
-     public static void Main(string[] args)  
-      {  
-       int  n,sum=0,m;         
-       Console.Write("Введите число: ");      
-       n= int.Parse(Console.ReadLine());     
-       while(n>0)      
-       {      
-        m = n % 10;      
-        sum = sum + m;      
-        n = n / 10;      
-       }      
-       Console.Write("Сумма цифр заданного числа = "+sum);       
-     }  
-  }  
+    public class Ex27
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите число : ");
+            int number = int.Parse(Console.ReadLine());
+            int sum = 0, reminder;
+           
+            while (number > 0)
+            {
+                reminder = number % 10;
+                sum = sum + reminder;
+                number = number / 10;
+            }
+            
+            Console.WriteLine($"Сумма цифр заданного числа = {sum}");
+            Console.ReadKey();
+        }
+    }
